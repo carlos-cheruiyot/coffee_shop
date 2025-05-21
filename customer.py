@@ -32,5 +32,7 @@ class Customer:
 
 
 
+    def create_order(self, coffee, price):
+        return Order(self, coffee, price)
 
 
