@@ -1,3 +1,17 @@
+from order import Order
+
+class Coffee:
+    # ... (existing code)
+
+    def orders(self):
+        return [order for order in Order.all_orders if order.coffee == self]
+
+    def customers(self):
+        return list({order.customer for order in self.orders()})
+
+
+
+
 class Coffee:
     all_coffees = []
 
