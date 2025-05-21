@@ -1,7 +1,8 @@
 import pytest
-from coffee import Coffee
-from customer import Customer
-from order import Order
+from ..coffee import Coffee
+from ..customer import Customer
+from ..order import Order
+
 
 def test_coffee_name_valid():
     coffee = Coffee("Americano")

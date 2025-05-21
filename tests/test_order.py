@@ -1,7 +1,9 @@
+
 import pytest
-from order import Order
-from customer import Customer
-from coffee import Coffee
+from ..order import Order
+from ..customer import Customer
+from ..coffee import Coffee
+
 
 def test_order_initialization_valid():
     c = Customer("Max")
